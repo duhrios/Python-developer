@@ -1,0 +1,10 @@
+salario = int(input('Salario:'))
+if salario >= 1250:
+  reajuste_15 = (salario * 15)/100
+  novo_salario15 = salario + reajuste_15
+  print ('O aumento do seu sálario foi de {:.2f}R$\nCom o reajuste passou a ser: {:.2f}R$'.format(reajuste_15,novo_salario15))
+else:
+  reajuste_20 = (salario * 20)/100
+  novo_salario_20 = salario + reajuste_20 
+  print ('O aumento do seu sálario foi de {:.2f}R$\nCom o reajuste passou a ser: {:.2f}R$'.format(reajuste_20,novo_salario_20))
+  
