@@ -1,10 +1,10 @@
-exit = 999
-soma = 0
-cont = 0
+
+exit = 0
 while True:
-    valor = int (input('Digite o Valor:'))
-    cont +=1
-    if valor == exit:
+    tabuada = int(input('\033[0;34mDigite o valor da tabuada:'))
+    if tabuada < exit:
         break
-    soma += valor
-print(f'A quantidade de vezes que foi adicionado um novo numero é {cont} e a soma é: {soma}')
+    for contador in range(1,11):
+        total = tabuada * contador
+        print('\033[1;33m{} X {} = {}'.format(tabuada,contador,total))
+print ('Tchau!!!')
